@@ -1,0 +1,7 @@
+Feature: Login functionality
+  Scenario: Valid admin login
+    Given user iis navigated to HRMS application
+    When user enters valid username and valid password
+    And user creates on Login button
+    Then user is successfully logged in
+
