@@ -31,4 +31,6 @@ public class CommonMethods {
         driver.manage().timeouts().implicitlyWait(11, TimeUnit.SECONDS);
     }
 
+
+
 }
