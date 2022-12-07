@@ -1,4 +1,6 @@
 Feature: DashBoard functionality
+
+  @sprint2 @regression
   Scenario: Verify dashboard
     Given user iis navigated to HRMS application
     When user enters valid username and valid password
