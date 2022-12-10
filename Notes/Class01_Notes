@@ -5,6 +5,12 @@ BDD - behavioral driven development -
 	When
 	And
 	Then
+
+	GIVEN: Sets the context. What page are we on and what state are we in? Is the user an admin? Signed-in? Has created a campaign?
+    WHEN: What actions the user is performing. What event occurred?
+    THEN: What should the system do in response? What is the expected outcome?
+
+
 We use BDD scenarios - to give a clear understanding to other colleagues in the team
 
 

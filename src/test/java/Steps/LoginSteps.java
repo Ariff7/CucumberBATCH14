@@ -33,7 +33,7 @@ public class LoginSteps extends CommonMethods {
     @When("user enters valid username and valid password")
     public void user_enters_valid_username_and_valid_password() {
 
-        LoginPage login=new LoginPage();
+      //  LoginPage login=new LoginPage();
 
 
 
@@ -50,14 +50,14 @@ public class LoginSteps extends CommonMethods {
 
     @When("user clicks on Login button")
     public void user_clicks_on_login_button() {
-        LoginPage login=new LoginPage();
+      //  LoginPage login=new LoginPage();
        // WebElement loginButton=driver.findElement(By.id("btnLogin"));
         click(login.loginButton);
     }
     @Then("user is successfully logged in")
     public void user_is_successfully_logged_in() {
-        WebElement welcomeMessage = driver.findElement(By.id("welcome"));
-        if (welcomeMessage.isDisplayed()) {
+     //   WebElement welcomeMessage = driver.findElement(By.id("welcome"));
+        if (dashboard.welcomeMessage.isDisplayed()) {
             System.out.println("Test case is passed ! ");
         } else {
             System.out.println("TEST FAILED ");
@@ -66,7 +66,7 @@ public class LoginSteps extends CommonMethods {
 
     @When("enter ess username and ess password") //Employee self-service (ESS) is the way in which employees can access HR-related information and software directly through a company's intranet or web portal.
     public void enter_ess_username_and_ess_password() {
-        LoginPage login=new LoginPage();
+     //   LoginPage login=new LoginPage();
 
 //        WebElement usernameField = driver.findElement(By.id("txtUsername"));
         sendText(login.usernameTextField, "admin123");
@@ -78,7 +78,7 @@ public class LoginSteps extends CommonMethods {
     @When("user enters invalid username and password")
     public void user_enters_invalid_username_and_password() {
 
-        LoginPage login=new LoginPage();
+     //   LoginPage login=new LoginPage();
 
       //  WebElement usernameField = driver.findElement(By.id("txtUsername"));
         sendText(login.usernameTextField, "admin123");
@@ -92,6 +92,7 @@ public class LoginSteps extends CommonMethods {
     public void error_message_displayed() {
         System.out.println("Error message displayed");
     }
+
 
 
     }
