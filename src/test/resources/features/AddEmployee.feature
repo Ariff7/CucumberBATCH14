@@ -31,3 +31,15 @@ Background:
        | Dasani    | Stevinson|
        | Chakala   | Bakala   |
 
+  @datatable
+  Scenario: Adding multiple employees using data table
+    When user adds multiple employees and verify they are added successfully
+    |firstName|middleName|lastName|
+    |zara     |MS        |camilullah|
+    |birgul   |MS        |ozgin     |
+    |alina    |MS        |Bobbyboy  |
+
+    @excel
+    Scenario: Adding multiple employees using excel
+      When user adds multiple employee from excel using "EmployeeData" and verify it
+

@@ -1,9 +1,12 @@
 Feature: DashBoard functionality
 
-  @sprint2 @regression
+  @sprint2 @regression @tc1106
   Scenario: Verify dashboard
    # Given user iis navigated to HRMS application
     When user enters valid username and valid password
     And user clicks on Login button
     Then user is successfully logged in
     Then user verify dashboard page
+    Then user verify all the dashboard tabs
+      |Admin|PIM|Leave|Time|Recruitment|Performance|Dashboard|Directory|
+
